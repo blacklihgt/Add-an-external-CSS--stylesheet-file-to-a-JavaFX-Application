@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.login.javafxstyle.HelloController">
+    <children>
+        <Label fx:id="loginTitleLabel" layoutX="430.0" layoutY="35.0" style="-fx-font-size: 40; -fx-text-fill: linear-gradient(from 0% 0% to 100% 200%, repeat, aqua 0%, red 50%); -fx-font-weight: BOLD; -fx-background-color: #f3f3f3; -fx-border-radius: 5; -fx-border-color: linear-gradient(from 0% 0% to 100% 200%, repeat, aqua 0%, red 50%);" text="Login" textFill="#31ebfc" underline="true">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></Label>
+        <ImageView fitHeight="400.0" fitWidth="325.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@login.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="enterDetailsLabel" layoutX="330.0" layoutY="120.0" style="-fx-text-fill: #727272; -fx-font-size: 15; -fx-font-weight: BOLD;" text="Enter the login details below:" />
+        <Label fx:id="usernameLabel" layoutX="333.0" layoutY="160.0" style="-fx-text-fill: #727272; -fx-font-size: 15;" text="Username:" />
+        <TextField fx:id="usernameTextField" layoutX="415.0" layoutY="157.0" promptText="john.doe@email.com" />
+        <Label fx:id="passwordLabel" layoutX="333.0" layoutY="198.0" style="-fx-text-fill: #727272; -fx-font-size: 15;" text="Password:" />
+        <PasswordField fx:id="passwordPasswordField" accessibleRole="PASSWORD_FIELD" layoutX="415.0" layoutY="195.0" promptText="********" />
+        <CheckBox fx:id="rememberMeCheckBox" layoutX="375.0" layoutY="245.0" mnemonicParsing="false" selected="true" style="-fx-text-fill: #727272;" text="Remember me?" />
+        <Label fx:id="errorLabel" layoutX="387.0" layoutY="280.0" prefHeight="16.0" prefWidth="171.0" style="-fx-text-fill: red;" text="Sign in error!" />
+        <Button fx:id="cancelButton" layoutX="370.0" layoutY="310.0" mnemonicParsing="false" onAction="#onCancelButtonClick" style="-fx-background-color: #4385F4; -fx-text-fill: white; -fx-font-size: 13;" text="Cancel" />
+        <Button fx:id="signInButton" layoutX="490.0" layoutY="310.0" mnemonicParsing="false" onAction="#onSignInButtonClick" style="-fx-background-color: #4385F4; -fx-text-fill: white; -fx-font-size: 13;" text="Sign in" />
+        <Button fx:id="forgotPasswordButton" layoutX="400.0" layoutY="350.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-text-fill: #727272;" text="Forgot password?" underline="true" />
+    </children>
+</AnchorPane>

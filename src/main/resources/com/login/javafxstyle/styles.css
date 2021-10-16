@@ -1,0 +1,32 @@
+/*
+-fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );*/
+.root {
+    /*This applies styling for the root node*/
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 200%, repeat, #fbeee6 0%, #cde0c9 50%);
+    -fx-font-family: "Lucida Console";
+}
+
+.label {
+    /* Styling for all Control with the class of 'label' */
+    -fx-padding: -2px;
+    -fx-start-margin: 2px;
+    -fx-end-margin: 2px;
+}
+
+#loginTitleLabel, #errorLabel {
+    -fx-font-family: "Chilanka";
+}
+
+/* Checkbox formatting */
+.check-box .mark {
+    -fx-shape: "M2,0L5,4L8,0L10,0L10,2L6,5L10,8L10,10L8,10L5,6L2,10L0,10L0,8L4,5L0,2L0,0Z";
+}
+
+.check-box:selected .mark {
+    -fx-background-color: #0181E2FF;
+}
+
+/*Once the button is clicked, it will display the following effect when one hovers over it*/
+.button:hover {
+    -fx-background-color: linear-gradient(#2A5058, #61a2b1);
+}
